@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slider</title>
+    <link rel="stylesheet" href="vixslider.css">
+    <script type="text/javascript" src="vixslider.js"></script>
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slides">
+            <div class="slide">
+                <img src="http://via.placeholder.com/640x300?text=Slide+1" alt="Yo Ho Ho! And a bottle of rum">
+            </div>
+            <div class="slide">
+                <img src="http://via.placeholder.com/640x300?text=Slide+2" alt="Old Mac Donald had a farm. e i e i ooo">
+            </div>
+            <div class="slide">
+                <img src="http://via.placeholder.com/640x300?text=Slide+3" alt="Jonny Jonny Yes papa">
+            </div>
+        </div>
+        <div class="slide-controls">
+            <a href="#" class="previous" onclick="showSlides(1)"> 
+                <i class="arrow left"></i> 
+            </a>
+            <a href="#" class="next" onclick="showSlides(2)"> 
+                <i class="arrow right"> </i>
+            </a>
+        </div>
+        <div class="slide-controls-more">
+            <button onclick="Start()">Start</button>
+            <button onclick="Stop()">Stop</button>
+        </div>
+    </div>
+    <script type="text/javascript">        
+        var slider = new VixSlider();
+        slider.autoSlide({automatic:false});
+    </script>
+</body>
+</html>
